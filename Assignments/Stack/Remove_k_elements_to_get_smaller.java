@@ -23,10 +23,10 @@ public class Remove_k_elements_to_get_smaller {
             sb.append(st.pop());
         }
         sb.reverse();
-        while (sb.length() > 0 && sb.charAt(0) == '0') {
+        while (!sb.isEmpty() && sb.charAt(0) == '0') {
             sb.deleteCharAt(0);
         }
-        if (sb.length() == 0) {
+        if (sb.isEmpty()) {
             return "0";
         }
         return sb.toString();
