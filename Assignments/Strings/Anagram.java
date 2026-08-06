@@ -22,6 +22,7 @@ public class Anagram {
         }
         System.out.println("Anagram");
     }
+
     public static void main(String[] args){
         try (Scanner sc = new Scanner(System.in)) {
             String st = sc.nextLine();
